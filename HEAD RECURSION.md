@@ -16,9 +16,27 @@ To write a Python program to demonstrate **Head Recursion** by finding and print
 7. **Stop**
 
 ## 💻 PROGRAM:
+```
+def fun(n):
+    if n > 0:
+        fun(n - 1)   # head recursion call
+        print(n, end=" ")
 
-ADD CODE HERE
+
+n = int(input())
+
+# If input is odd, convert to next even number
+if n % 2 != 0:
+    n += 1
+
+fun(n)
+```
 
 ## OUTPUT
 
+<img width="487" height="222" alt="image" src="https://github.com/user-attachments/assets/7179b5f0-0075-4075-8a32-bf218de1d3a9" />
+
+
 ## RESULT
+
+This program is excuted successfully and the output id verified
