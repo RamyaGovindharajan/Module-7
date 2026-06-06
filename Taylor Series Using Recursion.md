@@ -14,10 +14,37 @@ To write a Python program to evaluate a **Taylor Series** using **recursion**, w
 5. Print the result
 6. **Stop**
 
-## 💻 PROGRAM:
+## 💻 PROGRAM
 
-ADD CODE HERE
+```
+
+def series(x, n):
+    if n == 0:
+        return 1
+    return (x ** n) / n + series(x, n - 1)
+
+
+x = int(input())
+n = int(input())
+
+result = series(x, n)
+
+print(result)
+
+```
 
 ## OUTPUT
 
+
+Input:
+2
+3
+
+Output:
+6.0
+
+
+
 ## RESULT
+
+The program is excuted successfully and the output is verified.
